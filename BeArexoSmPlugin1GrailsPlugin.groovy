@@ -56,6 +56,9 @@ Brief summary/description of the plugin.
         // TODO Implement code that is executed when any artefact that this plugin is
         // watching is modified and reloaded. The event contains: event.source,
         // event.application, event.manager, event.ctx, and event.plugin.
+		println "plugin1 onChange"
+		
+
     }
 
     def onConfigChange = { event ->
@@ -66,4 +69,9 @@ Brief summary/description of the plugin.
     def onShutdown = { event ->
         // TODO Implement code that is executed when the application shuts down (optional)
     }
+	
+	def notifyOfEvent(){
+		super.notifyOfEvent()
+		println "notifyOfEvent"
+	}
 }
