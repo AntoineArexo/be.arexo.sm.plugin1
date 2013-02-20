@@ -2,6 +2,11 @@ grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
 
+
+
+grails.plugin.location.'be-arexo-sm-plugin1-core'="plugins/be-arexo-sm-plugin1-core"
+
+
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
     inherits("global") {
